@@ -1,0 +1,24 @@
+{
+    "title": "腾讯云开发实践",
+    "author": "ashuihui",
+    "language": "zh-hans",
+    "plugins": [
+        "-lunr",
+        "-search",
+        "-livereload",
+        "-sharing",
+        "-hightlight",
+        "katex",
+        "search-plus",
+        "github",
+        "splitter",
+        "book-summary-scroll-position-saver",
+        "back-to-top-button",
+        "expandable-chapters"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/ashuihui"
+        }
+    }
+}
