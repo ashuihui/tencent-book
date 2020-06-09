@@ -1,0 +1,5 @@
+name: Publish Gitbook
+uses: tuliren/publish-gitbook@v1.0.0
+with:
+  # Github token for the repo
+  github_token: ${{ secrets.ACCESS_TOKEN }}
