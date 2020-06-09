@@ -21,4 +21,4 @@ jobs:
         with:
           # specify either github_token or personal_token
           # github_token: ${{ secrets.GITHUB_TOKEN }}
-          personal_token:${{ secrets.ACCESS_TOKEN }}
+          github_token:${{ secrets.ACCESS_TOKEN }}
