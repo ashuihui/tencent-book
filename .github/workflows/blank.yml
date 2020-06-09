@@ -1,24 +1,15 @@
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+name: 'Gitbook Action Build'
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - master  # trigger branch
 jobs:
   build:
-    name: Build Gitbook
     runs-on: ubuntu-latest
     steps:
-      # We must check out the repo first
-      - name: Checkout
-        uses: actions/checkout@v2
-      # Now run this publish action
-      - name: Publish
-        uses: tuliren/publish-gitbook@v1.0.0
-        with:
-          # specify either github_token or personal_token
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
-          github_token:${{ secrets.ACCESS_TOKEN }}
+    - name: Checkout action
+      uses: actions/checkout@v2
+    - name: Gitbook Action
+      uses: zanderzhao/gitbook-action@v1.2.2
+      with:
+        token: ${{ secrets.ACCESS_TOKEN }}
